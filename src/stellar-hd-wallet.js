@@ -107,7 +107,7 @@ class StellarHDWallet {
    * @return {stellar-base.Keypair} Keypair instance for the account
    */
   getKeypair(index) {
-    const key = this.derive(`m/44'/148'/${index}'`);
+    const key = this.derive(`m/44'/314159'/${index}'`);
     return Keypair.fromRawEd25519Seed(key);
   }
 
